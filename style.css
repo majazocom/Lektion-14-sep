@@ -1,0 +1,46 @@
+.grid-calendar-header {
+    display: grid;
+    background-color: lightsalmon;
+    grid-template-columns: 1fr;
+}
+
+.grid-calendar-weekdays__weekday {
+    background-color: lightslategray;
+}
+
+.grid-calendar-days, .grid-calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid-calendar-days__day {
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.grid-calendar-days__day figure {
+    background-color: rgb(243, 72, 72);
+    border: 1px solid rgb(243, 72, 72);
+    color: white;
+    border-radius: 4rem;
+    width: 80px;
+    height: 80px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-calendar-days__day.grey {
+    background-color: lightgray;
+}

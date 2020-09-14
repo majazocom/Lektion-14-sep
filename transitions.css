@@ -1,0 +1,36 @@
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-with-overlay {
+    position: relative;
+    display: block;
+}
+
+.img-with-overlay__image {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.img-with-overlay__overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.473);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 1s ease-out;
+    transition-delay: 3s;
+}
+
+.img-with-overlay:hover .img-with-overlay__overlay {
+    height: 100%;
+}
+
+.img-with-overlay:hover {
+    transform: rotate(12deg) scale(1.8) translateZ(0);
+}
